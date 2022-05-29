@@ -8,7 +8,7 @@
         <version>4.7.3</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
     <artifactId>ruoyi-admin</artifactId>
 
     <description>
@@ -93,6 +93,8 @@
                 <configuration>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                     <warName>${project.artifactId}</warName>
+                    <!--自定义打包位置-->
+<!--                    <outputDirectory>../targets</outputDirectory>-->
                 </configuration>   
             </plugin>   
             <!-- YUI Compressor (CSS/JS压缩) 
